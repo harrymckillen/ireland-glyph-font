@@ -2,6 +2,9 @@
 
 This font has been created for a bit of fun. Each of the 32 counties are included, along with the map of Ireland. 
 
+## Demo
+If you want to see a demo of the font <a href="http://demos.wolfhound.ie/ireland-glyph-font/" target="_blank">please visit this sample page here.</a>
+
 ## Usage
 
 Include the `ireland_glyph_font.css` file in your HTML file and ensure you have the paths to the font files correct, depending on your setup. 
