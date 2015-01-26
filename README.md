@@ -1,0 +1,49 @@
+# Ireland Glyph Font Regular
+
+This font has been created for a bit of fun. Each of the 32 counties are included, along with the map of Ireland. 
+
+## Usage
+
+Include the `ireland_glyph_font.css` file in your HTML file and ensure you have the paths to the font files correct, depending on your setup. 
+
+The follow classes are available:
+
+```
+icon-ireland
+icon-antrim
+icon-armagh
+icon-carlow
+icon-cavan
+icon-clare
+icon-cork
+icon-derry
+icon-donegal
+icon-down
+icon-dublin
+icon-fermanagh
+icon-galway
+icon-kerry
+icon-kildare
+icon-kilkenny
+icon-laois
+icon-leitrim
+icon-limerick
+icon-longford
+icon-louth
+icon-mayo
+icon-meath
+icon-monaghan
+icon-offaly
+icon-roscommon
+icon-sligo
+icon-tipperary
+icon-tyrone
+icon-waterford
+icon-westmeath
+icon-wexford
+icon-wicklow
+```
+
+## License 
+
+There is no license, feel free to use anywhere, no attribution is required, but any is welcome. 
