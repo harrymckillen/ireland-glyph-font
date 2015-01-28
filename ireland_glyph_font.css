@@ -80,7 +80,18 @@ body{
 }
 .icon-kilkenny:before {
     content: "\0062";
+   	background: url(images/kilkenny-crest-sml.png) 4px 17px no-repeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    /* background: url(images/kilkenny-crest.png) -100px -40px no-repeat;
+    	-webkit-background-clip: text;
+      	-webkit-text-fill-color: transparent; */
 }
+/* .icon-kilkenny {
+    background: url(images/kilkenny-crest.png) -100px -40px no-repeat;
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+} */
 .icon-laois:before {
     content: "\0055";
 }
