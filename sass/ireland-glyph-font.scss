@@ -1,0 +1,42 @@
+/*
+	Ireland Glyph Font 
+	========================================
+	@author: Harry McKillen
+	@description: A Glyph Font of the map of Ireland, and each of the Irish Counties. 
+*/
+
+$icon-counties: ('ireland', 'antrim', 'armagh', 'carlow', 'cavan', 'clare', 'cork', 'derry', 'donegal', 'down', 'dublin', 'fermanagh', 'galway', 'kerry', 'kildare', 'kilkenny', 'laois', 'leitrim', 'limerick', 'longford', 'louth', 'mayo', 'meath', 'monaghan', 'offaly', 'roscommon', 'sligo', 'tipperary', 'tyrone', 'waterford', 'westmeath', 'wexford', 'wicklow');
+$icon-character: ('\0041', '\0044', '\0048', '\0063', '\004c', '\0059', '\0066', '\0043', '\0042', '\0049', '\0057', '\0045', '\0053', '\0065', '\0056', '\0062', '\0055', '\004b', '\005a', '\0050', '\004d', '\004e', '\0052', '\0047', '\0054', '\004f', '\004a', '\0061', '\0045', '\0067', '\0051', '\0063', '\0058');
+
+@font-face {
+    font-family: 'ireland-font';
+    src: url('../font/Ireland_Glyph_Font.eot');
+    src: url('../font/Ireland_Glyph_Font.eot?#iefix') format('embedded-opentype'),
+         url('../font/Ireland_Glyph_Font.woff') format('woff'),
+         url('../font/Ireland_Glyph_Font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"]:before, [class*="icon-"]{
+	font-family: 'ireland-font';
+	font-style: normal;
+  	font-weight: normal;
+  	text-align: center;
+  	font-variant: normal;
+  	text-transform: none;	
+}
+
+@for $i from 0 to length($icon-counties) {
+    $thisIcon: unquote(nth($icon-counties, $i+1));
+    .icon-#{$thisIcon}:before {
+        content: nth($icon-character, $i+1);
+    }
+}
+
+/* 
+   	background: url(../images/kilkenny.jpg) -50px -5px no-repeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 200px; 
+*/

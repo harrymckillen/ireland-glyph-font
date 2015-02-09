@@ -1,0 +1,4 @@
+# gitignore files/folder
+
+.sass-cache
+*.sh
