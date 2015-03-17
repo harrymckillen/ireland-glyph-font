@@ -1,3 +1,7 @@
+//import
+@import 'main';
+@import 'normalize';
+
 // variables 
 $heading-font: 'Francois One', sans-serif;
 $body-font: 'Lato', sans-serif;
@@ -9,10 +13,21 @@ $body-font: 'Lato', sans-serif;
 }
 
 body{
+	overflow-x:hidden;
 	background: #f1f1f1;
 	color: #444;
 	font-size:16px;
 	font-family: $body-font;
+	.cloud{
+		border:1px solid white;
+		display: block;
+		width:200px;
+		height: 200px;
+		position:absolute;
+		top:0;
+		left:0;
+	}
+
 	.map-green{
 		color:MediumSeaGreen;
 	}
@@ -209,4 +224,40 @@ body{
 /* line heights */
 .line-height-300px{
 	line-height: 300px;
+}
+
+/* Animations */
+.cloud-float{
+	-moz-animation: clouds 15s infinite;
+  	-webkit-animation: clouds 15s infinite;
+  	animation: clouds 15s infinite;
+}
+
+
+@-moz-keyframes clouds {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: 110%;
+    }
+}
+
+@-webkit-keyframes clouds
+{
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: 110%;
+    }
+}
+@keyframes clouds
+{
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: 110%;
+    }
 }
