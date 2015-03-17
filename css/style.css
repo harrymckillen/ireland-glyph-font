@@ -8,7 +8,7 @@ body {
   background: #f1f1f1;
   color: #444;
   font-size: 16px;
-  font-family: "Libre Baskerville", serif;
+  font-family: "Lato", sans-serif;
 }
 body .map-green {
   color: MediumSeaGreen;
@@ -18,15 +18,15 @@ body .background-steel-blue {
 }
 body h1 {
   font-size: 52px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Francois One", sans-serif;
 }
 body h2 {
   font-size: 28px;
-  font-family: "Libre Baskerville", serif;
+  font-family: "Francois One", sans-serif;
 }
 body h3 {
   font-size: 26px;
-  font-family: "Libre Baskerville", serif;
+  font-family: "Francois One", sans-serif;
 }
 body a {
   text-decoration: none;
@@ -45,7 +45,7 @@ body .hero h1.heading {
   text-transform: uppercase;
 }
 body .hero .button {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Francois One", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   height: 60px;
@@ -79,6 +79,9 @@ body .map .ulster {
   position: absolute;
   color: red;
 }
+body .map .ulster a {
+  color: red;
+}
 body .map .ulster .icon-antrim {
   line-height: 202px;
   position: absolute;
@@ -86,12 +89,61 @@ body .map .ulster .icon-antrim {
   left: 416px;
   top: 31px;
 }
+body .map .ulster .icon-armagh {
+  line-height: 202px;
+  position: absolute;
+  font-size: 126px;
+  left: 398px;
+  top: 127px;
+}
+body .map .ulster .icon-cavan {
+  line-height: 202px;
+  position: absolute;
+  font-size: 265px;
+  left: 270px;
+  top: 186px;
+}
+body .map .ulster .icon-derry {
+  line-height: 200px;
+  position: absolute;
+  font-size: 180px;
+  left: 345px;
+  top: 20px;
+}
 body .map .ulster .icon-donegal {
   line-height: 200px;
   position: absolute;
   font-size: 360px;
   left: 198px;
   top: 35px;
+}
+body .map .ulster .icon-down {
+  line-height: 200px;
+  position: absolute;
+  font-size: 192px;
+  left: 448px;
+  top: 119px;
+}
+body .map .ulster .icon-fermanagh {
+  line-height: 200px;
+  position: absolute;
+  font-size: 211px;
+  left: 260px;
+  top: 124px;
+}
+body .map .ulster .icon-monaghan {
+  line-height: 200px;
+  position: absolute;
+  font-size: 148px;
+  left: 354px;
+  top: 150px;
+}
+body .map .ulster .icon-tyrone {
+  line-height: 200px;
+  position: absolute;
+  font-size: 275px;
+  left: 290px;
+  top: 76px;
 }
 body .counties {
   color: #444;
@@ -155,5 +207,3 @@ body .counties h3 {
 .line-height-300px {
   line-height: 300px;
 }
-
-/*# sourceMappingURL=style.css.map */

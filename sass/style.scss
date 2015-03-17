@@ -1,6 +1,6 @@
 // variables 
-$baskerville: 'Libre Baskerville', serif;
-$quicksand: 'Quicksand', sans-serif;
+$heading-font: 'Francois One', sans-serif;
+$body-font: 'Lato', sans-serif;
 
 *{
 	-webkit-box-sizing: border-box;
@@ -12,7 +12,7 @@ body{
 	background: #f1f1f1;
 	color: #444;
 	font-size:16px;
-	font-family: $baskerville;
+	font-family: $body-font;
 	.map-green{
 		color:MediumSeaGreen;
 	}
@@ -22,15 +22,15 @@ body{
 	
 	h1{
 		font-size: 52px;
-		font-family: $quicksand;
+		font-family: $heading-font;
 	}
 	h2{
 		font-size: 28px;
-		font-family: $baskerville;
+		font-family: $heading-font;
 	}
 	h3{
 		font-size:26px;
-		font-family: $baskerville;
+		font-family: $heading-font;
 		// font-weight: normal;
 	}
 	a{
@@ -52,7 +52,7 @@ body{
 		}		
 
 		.button {
-			font-family: $quicksand;
+			font-family: $heading-font;
 			font-weight: bold;
 			text-transform: uppercase;
 			height: 60px;
@@ -69,7 +69,6 @@ body{
 	.intro{
 		font-size: 1.3em;
 		text-align: center;
-
 	}
 	.map{
 		height: 800px;
@@ -86,12 +85,36 @@ body{
 		.ulster{
 			position: absolute;
 			color: red;
+			a{
+				color:red;
+			}
 			.icon-antrim{
 				line-height: 202px;
 				position: absolute;
 				font-size: 202px;
 				left: 416px;
 				top: 31px;
+			}
+			.icon-armagh{
+				line-height: 202px;
+				position: absolute;
+				font-size: 126px;
+				left: 398px;
+				top: 127px;
+			}
+			.icon-cavan{
+				line-height: 202px;
+				position: absolute;
+				font-size: 265px;
+				left: 270px;
+				top: 186px;
+			}
+			.icon-derry{
+				line-height: 200px;
+				position: absolute;
+				font-size: 180px;
+				left: 345px;
+				top: 20px;
 			}
 			.icon-donegal{
 				line-height: 200px;
@@ -100,11 +123,40 @@ body{
 				left: 198px;
 				top: 35px;
 			}
+			.icon-down{
+				line-height: 200px;
+				position: absolute;
+				font-size: 192px;
+				left: 448px;
+				top: 119px;
+			}
+			.icon-fermanagh{
+				line-height: 200px;
+				position: absolute;
+				font-size: 211px;
+				left: 260px;
+				top: 124px;
+			}
+			.icon-monaghan{
+				line-height: 200px;
+				position: absolute;
+				font-size: 148px;
+				left: 354px;
+				top: 150px;
+			}
+			.icon-tyrone{
+				line-height: 200px;
+				position: absolute;
+				font-size: 275px;
+				left: 290px;
+				top: 76px;
+			}
 		}
 	}
 	.counties{
 		color:#444;
 		text-align:center;
+
 		[class^="icon-"]{
 			line-height: 150px;
 		}
@@ -113,8 +165,6 @@ body{
 		}
 	}
 }
-
-
 
 .no-padding{ 
 	padding: 0;
