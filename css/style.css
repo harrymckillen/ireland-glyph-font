@@ -934,6 +934,14 @@ body .hero h1.heading {
   font-weight: normal;
   text-transform: uppercase;
 }
+body .hero .hero-icon {
+  font-size: 400px;
+}
+@media screen and (max-width: 560px) {
+  body .hero .hero-icon {
+    font-size: 250px;
+  }
+}
 body .hero .button {
   font-family: "Francois One", sans-serif;
   font-weight: bold;
@@ -951,6 +959,11 @@ body .hero .button {
 @media screen and (max-width: 780px) {
   body .hero .button {
     width: 40%;
+  }
+}
+@media screen and (max-width: 560px) {
+  body .hero .button {
+    width: 75%;
   }
 }
 body .intro {

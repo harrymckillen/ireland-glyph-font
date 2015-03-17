@@ -94,7 +94,14 @@ body{
 			letter-spacing: 3px;
 			font-weight: normal;
 			text-transform: uppercase;
-		}		
+		}	
+
+		.hero-icon{
+			font-size: 400px;
+			@media screen and (max-width: 560px) {
+				font-size: 250px;
+			}
+		}	
 
 		.button {
 			font-family: $heading-font;
@@ -111,6 +118,9 @@ body{
 			border-radius: 5px;
 			@media screen and (max-width: 780px) {
 				width:40%;
+			}
+			@media screen and (max-width: 560px) {
+				width:75%;
 			}
 		}
 	}
