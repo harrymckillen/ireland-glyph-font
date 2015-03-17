@@ -1,6 +1,7 @@
 //import
 @import 'main';
 @import 'normalize';
+@import 'cloud';
 
 // variables 
 $heading-font: 'Francois One', sans-serif;
@@ -19,13 +20,42 @@ body{
 	font-size:16px;
 	font-family: $body-font;
 	.cloud{
-		border:1px solid white;
+		// border:1px solid white;
 		display: block;
-		width:200px;
-		height: 200px;
-		position:absolute;
-		top:0;
-		left:0;
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		/* top: 0; */
+		/* left: 0; */
+		line-height: 100px;
+		opacity: 0.5;
+		font-size: 4em;
+		text-align: center;
+	}
+	.cloud-top-25pc{
+		top:25%;
+	}
+	.cloud-top-50pc{
+		top:50%;
+	}
+	.cloud-top-65pc{
+		top:65%;
+	}
+	/* Animations */
+	.cloud-float-35s{
+		-moz-animation: clouds 35s infinite;
+	  	-webkit-animation: clouds 35s infinite;
+	  	animation: clouds 35s infinite;
+	}
+	.cloud-float-25s{
+		-moz-animation: clouds 25s infinite;
+	  	-webkit-animation: clouds 25s infinite;
+	  	animation: clouds 25s infinite;
+	}
+	.cloud-float-15s{
+		-moz-animation: clouds 15s infinite;
+	  	-webkit-animation: clouds 15s infinite;
+	  	animation: clouds 15s infinite;
 	}
 
 	.map-green{
@@ -79,6 +109,9 @@ body{
 			border: 2px solid #fff;
 			color: #fff;
 			border-radius: 5px;
+			@media screen and (max-width: 780px) {
+				width:40%;
+			}
 		}
 	}
 	.intro{
@@ -225,14 +258,6 @@ body{
 .line-height-300px{
 	line-height: 300px;
 }
-
-/* Animations */
-.cloud-float{
-	-moz-animation: clouds 15s infinite;
-  	-webkit-animation: clouds 15s infinite;
-  	animation: clouds 15s infinite;
-}
-
 
 @-moz-keyframes clouds {
     0% {
