@@ -7,7 +7,7 @@ If you want to see a demo of the font <a href="http://harrymckillen.github.io/ir
 
 ## Usage
 
-Include the `ireland_glyph_font.css` file in your HTML file and ensure you have the paths to the font files correct, depending on your setup. 
+Include the `css/ireland-glyph-font.max.css` file (or choose the *.min.css version) in your HTML file and ensure you have the paths to the font files correct, depending on your setup. 
 
 The follow classes are available:
 
