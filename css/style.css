@@ -875,6 +875,7 @@ body .cloud {
   opacity: 0.5;
   font-size: 4em;
   text-align: center;
+  z-index: 10;
 }
 body .cloud-top {
   top: 3em;
