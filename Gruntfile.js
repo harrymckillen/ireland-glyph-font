@@ -52,11 +52,11 @@ module.exports = function (grunt) {
     ]);
   grunt.registerTask('default',
     [
-      'sass'
+      'build'
     ]);
   grunt.registerTask('serve',
     [
-      'sass',
+      'build',
       'connect'
     ]);
 };
