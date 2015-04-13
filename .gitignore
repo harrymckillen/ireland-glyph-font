@@ -2,3 +2,5 @@
 
 .sass-cache
 *.sh
+package.json
+node_modules/
