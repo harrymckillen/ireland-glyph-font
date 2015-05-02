@@ -3,3 +3,4 @@
 .sass-cache
 *.sh
 node_modules/
+*.backup

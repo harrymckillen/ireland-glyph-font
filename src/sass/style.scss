@@ -4,278 +4,354 @@
 @import 'cloud';
 
 // variables 
-$heading-font: 'Francois One', sans-serif;
+$heading-font: 'Pacifico', cursive;;
 $body-font: 'Lato', sans-serif;
 
+// colours
+.colour-msgreen{
+    color:MediumSeaGreen;
+}
+.colour-white{
+    color: #fff;
+}
+.background-steel-blue{
+    background: SteelBlue;
+}
+.background-msgreen{
+    background: MediumSeaGreen;
+}
+
+// general
 *{
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
+// body
 body{
-	overflow-x:hidden;
-	background: #f1f1f1;
-	color: #444;
-	font-size:16px;
-	font-family: $body-font;
-
-	.cloud{
-		// border:1px solid white;
-		display: block;
-		width: 100px;
-		height: 100px;
-		position: absolute;
-		/* top: 0; */
-		/* left: 0; */
-		line-height: 100px;
-		opacity: 0.5;
-		font-size: 4em;
-		text-align: center;
-		z-index: 10;
-	}
-	.cloud-top{
-		top:3em;
-	}
-	.cloud-middle{
-		top:4.5em;
-	}
-	.cloud-bottom{
-		top:6em;
-	}
-	/* Animations */
-	.cloud-float-35s{
-		-moz-animation: clouds 35s infinite;
-	  	-webkit-animation: clouds 35s infinite;
-	  	animation: clouds 35s infinite;
-	}
-	.cloud-float-25s{
-		-moz-animation: clouds 25s infinite;
-	  	-webkit-animation: clouds 25s infinite;
-	  	animation: clouds 25s infinite;
-	}
-	.cloud-float-15s{
-		-moz-animation: clouds 15s infinite;
-	  	-webkit-animation: clouds 15s infinite;
-	  	animation: clouds 15s infinite;
-	}
-
-	.map-green{
-		color:MediumSeaGreen;
-	}
-	.background-steel-blue{
-		background: SteelBlue;
-	}
-	
-	h1{
-		font-size: 52px;
-		font-family: $heading-font;
-	}
-	h2{
-		font-size: 28px;
-		font-family: $heading-font;
-	}
-	h3{
-		font-size:26px;
-		font-family: $heading-font;
-		// font-weight: normal;
-	}
-	a{
-		text-decoration:none;
-	}
-
-	.hero{
-		margin:0;
-		padding:0;
-		color:white;
-
-		h1.heading{
-			display:inline-block;
-			width:100%;
-			text-align: center;
-			letter-spacing: 3px;
-			font-weight: normal;
-			text-transform: uppercase;
-		}	
-
-		.hero-icon{
-			font-size: 400px;
-			@media screen and (max-width: 560px) {
-				font-size: 250px;
-			}
-		}	
-
-		.button {
-			font-family: $heading-font;
-			font-weight: bold;
-			text-transform: uppercase;
-			height: 60px;
-			font-size: 26px;
-			line-height: 60px;
-			display: block;
-			margin-bottom: 1.5em;
-			width: 60%;
-			border: 2px solid #fff;
-			color: #fff;
-			border-radius: 5px;
-			@media screen and (max-width: 780px) {
-				margin-bottom: 0.5em;
-				width:100%;
-			}
-		}
-	}
-	.intro{
-		font-size: 1.3em;
-		text-align: center;
-	}
-	.map{
-		height: 800px;
-		width: 100%;
-		text-align: center;
-		position: relative;
-		.ireland-map{
-			position:absolute;
-			color: black;
-			font-size: 1000px;
-			line-height: 700px;
-			margin-top: 100px;
-		}
-		.ulster{
-			position: absolute;
-			color: red;
-			a{
-				color:red;
-			}
-			.icon-antrim{
-				line-height: 202px;
-				position: absolute;
-				font-size: 202px;
-				left: 416px;
-				top: 31px;
-			}
-			.icon-armagh{
-				line-height: 202px;
-				position: absolute;
-				font-size: 126px;
-				left: 398px;
-				top: 127px;
-			}
-			.icon-cavan{
-				line-height: 202px;
-				position: absolute;
-				font-size: 265px;
-				left: 270px;
-				top: 186px;
-			}
-			.icon-derry{
-				line-height: 200px;
-				position: absolute;
-				font-size: 180px;
-				left: 345px;
-				top: 20px;
-			}
-			.icon-donegal{
-				line-height: 200px;
-				position: absolute;
-				font-size: 360px;
-				left: 198px;
-				top: 35px;
-			}
-			.icon-down{
-				line-height: 200px;
-				position: absolute;
-				font-size: 192px;
-				left: 448px;
-				top: 119px;
-			}
-			.icon-fermanagh{
-				line-height: 200px;
-				position: absolute;
-				font-size: 211px;
-				left: 260px;
-				top: 124px;
-			}
-			.icon-monaghan{
-				line-height: 200px;
-				position: absolute;
-				font-size: 148px;
-				left: 354px;
-				top: 150px;
-			}
-			.icon-tyrone{
-				line-height: 200px;
-				position: absolute;
-				font-size: 275px;
-				left: 290px;
-				top: 76px;
-			}
-		}
-	}
-	.counties{
-		color:#444;
-		text-align:center;
-
-		[class^="icon-"]{
-			line-height: 150px;
-		}
-		h3{
-			margin: 0 0 0.5em 0;
-		}
-	}
+    overflow-x:hidden;
+    color: white;
+    font-size:16px;
+    font-family: $body-font;
 }
 
-.float-right{
-	float: right;
+// fonts
+h1{
+    font-size: 72px;
+    font-family: $heading-font;
+    font-weight: normal;
 }
-.no-padding{ 
-	padding: 0;
+h2{
+    font-size: 48px;
+    font-family: $heading-font;
+    // color: deepskyblue;
+    text-shadow: 1px 1px 0px #444;
+    font-weight: normal;
 }
-.no-padding-top-bot{ 
-	padding-top: 0;
-	padding-bottom: 0;
+h3{
+    font-size:32px;
+    font-family: $heading-font;
+    // color: deepskyblue;
+    text-shadow: 1px 1px 0px #444;
+    font-weight: normal;
 }
-.padding-top-sml{
-	padding-top: 20px;
+a{
+    // text-decoration: none;
+    color: #fff;
 }
-
-.no-margin{ 
-	margin: 0 !important;
-}
-.no-margin-top-bot{ 
-	margin-top: 0;
-	margin-bottom: 0;
-}
-.margin-bottom-sml{ 
-	margin-bottom: 15px;
-}
-
-.center-block{
-	display:block;
-	margin: 0 auto;
-}
-/* font */
 .center-text{
-	text-align: center;
+    text-align: center;
 }
 .bold-text{
-	font-weight: bold;
+    font-weight: bold;
 }
 .size-2em{
-	font-size: 2em;
+    font-size: 2em;
 }
 .size-200px{
-	font-size: 200px;
+    font-size: 200px;
 }
 .size-400px{
-	font-size: 400px;
+    font-size: 400px;
 }
-/* line heights */
 .line-height-200px{
-	line-height: 200px;
+    line-height: 200px;
 }
-/* line heights */
 .line-height-300px{
-	line-height: 300px;
+    line-height: 300px;
+}
+
+// layout and style
+.hero{
+    margin:0;
+    padding:0;
+    color:white;
+    box-shadow: 0 1px 5px #444;
+    h1.heading{
+        display:inline-block;
+        width:100%;
+        text-align: center;
+        letter-spacing: 3px;
+        font-weight: normal;
+        text-shadow: 1px 1px 0px #444;
+        // text-transform: uppercase;
+    }   
+
+    .hero-icon{
+        font-size: 400px;
+        @media screen and (max-width: 560px) {
+            font-size: 250px;
+        }
+    }   
+
+    .button {
+        // font-family: $heading-font;
+        font-family: $body-font;
+        font-weight: bold;
+        text-transform: uppercase;
+        height: 60px;
+        font-size: 26px;
+        line-height: 60px;
+        display: block;
+        margin-bottom: 1.5em;
+        width: 60%;
+        border: 2px solid #fff;
+        color: #fff;
+        border-radius: 5px;
+        @media screen and (max-width: 780px) {
+            margin-bottom: 0.5em;
+            width:100%;
+        }
+    }
+}
+.intro{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+// county icons
+.counties{
+    // color:#444;
+    text-align:center;
+
+    [class^="icon-"]{
+        line-height: 150px;
+    }
+    h3{
+        margin: 0 0 0.5em 0;
+    }
+}
+/* .map{
+    height: 800px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    .ireland-map{
+        position:absolute;
+        color: black;
+        font-size: 1000px;
+        line-height: 700px;
+        margin-top: 100px;
+    }
+    .ulster{
+        position: absolute;
+        color: red;
+        a{
+            color:red;
+        }
+        .icon-antrim{
+            line-height: 202px;
+            position: absolute;
+            font-size: 202px;
+            left: 416px;
+            top: 31px;
+        }
+        .icon-armagh{
+            line-height: 202px;
+            position: absolute;
+            font-size: 126px;
+            left: 398px;
+            top: 127px;
+        }
+        .icon-cavan{
+            line-height: 202px;
+            position: absolute;
+            font-size: 265px;
+            left: 270px;
+            top: 186px;
+        }
+        .icon-derry{
+            line-height: 200px;
+            position: absolute;
+            font-size: 180px;
+            left: 345px;
+            top: 20px;
+        }
+        .icon-donegal{
+            line-height: 200px;
+            position: absolute;
+            font-size: 360px;
+            left: 198px;
+            top: 35px;
+        }
+        .icon-down{
+            line-height: 200px;
+            position: absolute;
+            font-size: 192px;
+            left: 448px;
+            top: 119px;
+        }
+        .icon-fermanagh{
+            line-height: 200px;
+            position: absolute;
+            font-size: 211px;
+            left: 260px;
+            top: 124px;
+        }
+        .icon-monaghan{
+            line-height: 200px;
+            position: absolute;
+            font-size: 148px;
+            left: 354px;
+            top: 150px;
+        }
+        .icon-tyrone{
+            line-height: 200px;
+            position: absolute;
+            font-size: 275px;
+            left: 290px;
+            top: 76px;
+        }
+    }
+} */
+
+// utility classes
+.float-right{
+    float: right;
+}
+.no-padding{ 
+    padding: 0;
+}
+.no-padding-top-bot{ 
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.padding-top-sml{
+    padding-top: 20px;
+}
+.no-margin{ 
+    margin: 0 !important;
+}
+.no-margin-top-bot{ 
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.margin-bottom-sml{ 
+    margin-bottom: 15px;
+}
+.center-block{
+    display:block;
+    margin: 0 auto;
+}
+.no-decoration{
+  text-decoration: none;
+}
+
+// clouds
+.cloud{
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    line-height: 100px;
+    opacity: 0.5;
+    font-size: 4em;
+    text-align: center;
+    z-index: 10;
+}
+.cloud-top{
+    top:3em;
+}
+.cloud-middle{
+    top:4.5em;
+}
+.cloud-bottom{
+    top:6em;
+}
+
+// cloud animations
+.cloud-float-35s{
+    -moz-animation: clouds 35s infinite;
+    -webkit-animation: clouds 35s infinite;
+    animation: clouds 35s infinite;
+}
+.cloud-float-25s{
+    -moz-animation: clouds 25s infinite;
+    -webkit-animation: clouds 25s infinite;
+    animation: clouds 25s infinite;
+}
+.cloud-float-15s{
+    -moz-animation: clouds 15s infinite;
+    -webkit-animation: clouds 15s infinite;
+    animation: clouds 15s infinite;
+}
+
+a.threed {
+  line-height: 44px;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+  span {
+      position: relative;
+      display: inline-block;
+      padding: 0 6px;
+      background: #31965e;
+      -webkit-transition: -webkit-transform 0.3s;
+      -moz-transition: -moz-transform 0.3s;
+      transition: transform 0.3s;
+      -webkit-transform-origin: 50% 0;
+      -moz-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      &::before {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #287c4d;
+        content: attr(data-hover);
+        -webkit-transition: background 0.3s;
+        -moz-transition: background 0.3s;
+        transition: background 0.3s;
+        -webkit-transform: rotateX(-90deg);
+        -moz-transform: rotateX(-90deg);
+        transform: rotateX(-90deg);
+        -webkit-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+      }
+  }
+
+  &:hover, 
+  &:focus{
+    span::before {
+      background: #287c4d;  
+    }
+    span{
+      -webkit-transform: rotateX(90deg) translateY(-22px);
+      -moz-transform: rotateX(90deg) translateY(-22px);
+      transform: rotateX(90deg) translateY(-22px);
+    }
+  }
 }
 
 @-moz-keyframes clouds {
