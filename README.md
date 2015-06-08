@@ -52,3 +52,5 @@ icon-wicklow
 SIL Open Font License (OFL) 
 
 Feel free to use anywhere, commerical or non-commercial, no attribution is required, but any is welcome. 
+
+.
